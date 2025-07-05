@@ -45,7 +45,7 @@ This task aims to demonstrate fundamental embedded systems concepts: inputs, pro
 ## 💡 Arduino Code
 
 The complete Arduino code for this task is included in the file:  
-button_led_control.ino (uploaded in the repository)
+BUTTON_LED_control_system.ino (uploaded in the repository)
 
 It includes:
 - Pin declarations  
@@ -56,6 +56,10 @@ It includes:
 
 ## 📸 Images Included
 
+All the following visuals with detailed explanations are provided in the attached PDF file:
+Task1_ryof.pdf
+
+It includes:
 - Full circuit layout  
 - Individual views showing each button-to-LED connection  
 - Arduino IDE screenshots showing the full working code
@@ -73,4 +77,4 @@ It includes:
 ---
 
 ## ✨ Created by:  
-Ryoof Al-Malki
+🌷Ryoof Dukhailallah Al-Malki🌷
