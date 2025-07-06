@@ -44,13 +44,44 @@ This task aims to demonstrate fundamental embedded systems concepts: inputs, pro
 
 ## 💡 Arduino Code
 
-The complete Arduino code for this task is included in the file:  
-BUTTON_LED_control_system.ino (uploaded in the repository)
+```cpp
+const int firstButton = 2;
+const int secondButton = 4;
+const int thirdButton = 7;
 
-It includes:
-- Pin declarations  
-- Digital input/output setup  
-- Looping logic to check button state and control corresponding LED
+const int firstLED = 8;
+const int secondLED = 9;
+const int thirdLED = 10;
+
+void setup() {
+  pinMode(firstButton, INPUT);
+  pinMode(secondButton, INPUT);
+  pinMode(thirdButton, INPUT);
+
+  pinMode(firstLED, OUTPUT);
+  pinMode(secondLED, OUTPUT);
+  pinMode(thirdLED, OUTPUT);
+}
+
+void loop() {
+  if (digitalRead(firstButton) == HIGH) {
+    digitalWrite(firstLED, HIGH);
+  } else {
+    digitalWrite(firstLED, LOW);
+  }
+
+  if (digitalRead(secondButton) == HIGH) {
+    digitalWrite(secondLED, HIGH);
+  } else {
+    digitalWrite(secondLED, LOW);
+  }
+
+  if (digitalRead(thirdButton) == HIGH) {
+    digitalWrite(thirdLED, HIGH);
+  } else {
+    digitalWrite(thirdLED, LOW);
+  }
+}
 
 ---
 
